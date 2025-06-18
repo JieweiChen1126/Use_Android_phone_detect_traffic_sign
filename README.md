@@ -18,7 +18,6 @@
 
 資料集已經整理為 YOLO 格式，包含以下類別：
 
----
 - 各類交通號誌圖片
 - YOLO 格式標註（`.txt`）
 ---
@@ -42,13 +41,14 @@ from ultralytics import YOLO
 model = YOLO("best.pt")  # 載入訓練好的模型
 results = model.predict(source="test.jpg", conf=0.3, save=True)  # 預測圖像
 
----
 📂 預測結果輸出位置：
 預設會儲存在 runs/detect/predict/ 資料夾中
 
 可透過以下指令顯示圖片：
 from IPython.display import Image
 Image(filename='runs/detect/predict/test.jpg')
+
+---
 
 ### 📱 在 Android Studio 使用 YOLOv8 模型
 本專案的 Android App 是參考 AarohiSingla/Object-Detection-Android-App 並加以修改，使其能夠讀取 YOLOv8 TFLite 模型 進行即時交通號誌辨識。
