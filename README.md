@@ -7,8 +7,8 @@
 
 ## 🎥 實測影片
 
-- [📺 Demo 影片 1](https://youtu.be/dlAm7eZzP6I) 
-- [📺 Demo 影片 2](https://youtu.be/aLm5FB8fbxg?si=0OlG5yID60spQ9gS) 
+- [📺 道路實測1](https://youtu.be/aLm5FB8fbxg?si=0OlG5yID60spQ9gS) 
+- [📺 道路實測2](https://youtu.be/dlAm7eZzP6I) 
 
 ---
 
@@ -41,6 +41,7 @@ from ultralytics import YOLO
 model = YOLO("best.pt")  # 載入訓練好的模型
 results = model.predict(source="test.jpg", conf=0.3, save=True)  # 預測圖像
 
+
 📂 預測結果輸出位置：
 預設會儲存在 runs/detect/predict/ 資料夾中
 
@@ -50,6 +51,6 @@ Image(filename='runs/detect/predict/test.jpg')
 
 ---
 
-### 📱 在 Android Studio 使用 YOLOv8 模型
+## 📱 在 Android Studio 使用 YOLOv8 模型
 本專案的 Android App 是參考 AarohiSingla/Object-Detection-Android-App 並加以修改，使其能夠讀取 YOLOv8 TFLite 模型 進行即時交通號誌辨識。
 使用方法參考上一行連結之Github即可。
