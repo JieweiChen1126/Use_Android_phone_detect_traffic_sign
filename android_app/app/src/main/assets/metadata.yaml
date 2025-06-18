@@ -1,0 +1,37 @@
+description: Ultralytics best model trained on /content/drive/My Drive/Colab Notebooks/yolo_dataset/dataset.yaml
+author: Ultralytics
+date: '2025-06-16T22:10:21.195272'
+version: 8.3.155
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 640
+- 640
+names:
+  0: Crossing
+  1: speed_30
+  2: speed_40
+  3: speed_50
+  4: speed_60
+  5: speed_70
+  6: '30'
+  7: '40'
+  8: '50'
+  9: '60'
+  10: '70'
+  11: red_light
+  12: green_light
+  13: yellow_light
+  14: forbidden
+  15: take_photo
+  16: two_left
+args:
+  batch: 1
+  fraction: 1.0
+  half: false
+  int8: false
+  nms: false
+channels: 3
