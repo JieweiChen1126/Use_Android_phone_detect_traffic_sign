@@ -46,6 +46,7 @@ results = model.predict(source="test.jpg", conf=0.3, save=True)  # 預測圖像
 預設會儲存在 runs/detect/predict/ 資料夾中
 
 可透過以下指令顯示圖片：
+
 from IPython.display import Image
 
 Image(filename='runs/detect/predict/test.jpg')
